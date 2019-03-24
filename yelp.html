@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!-- Student Name: JAIDEEP SINGH KAINTH   -->
+<html lang="en">
+  <head>
+    <title>Web Mashup: Display Best Restaurants on a Map</title>
+    <meta charset="utf-8"/>
+    <script type="text/javascript" src="yelp.js"></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWQlvokpd4JjOrhRdbN1dvxw9ncMkP4VQ&callback=initialize"
+  type="text/javascript"></script>
+  </head>
+  <body onload="initialize();">
+    <form>
+       <label>Search Terms: <input type="text" id="search"/></label>
+       <input type="button" onclick="sendRequest();" value="Find"/>
+    </form><br/>
+	<div id="map" style="width: 600px; height: 500px;"></div><br/>
+    <div id="output">&nbsp;</div>
+  </body>
+</html>
